@@ -1,0 +1,29 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+rx_buffer                                                         0x0260      24
+tx_buffer                                                         0x0278     264
+ptr_to_ram                                                        0x0380       2
+outU                                                              0x0382       4
+ptr_to_eeprom                                                     0x0386       2
+Tf                                                                0x0388       8
+z1                                                                0x0390       4
+z2                                                                0x0394       8
+z3                                                                0x039C       6
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+sys                                                               0x0000       5
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+rx_wr_index                                                       R5           1
+rx_rd_index                                                       R4           1
+rx_counter                                                        R7           1
+rx_buffer_overflow                                                R2.0      1bit
+tx_wr_index                                                       R8,R9        2
+tx_rd_index                                                       R10,R11      2
+tx_counter                                                        R12,R13      2
+error                                                             R6           1
